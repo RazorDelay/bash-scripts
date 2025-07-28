@@ -7,7 +7,7 @@ length=${#hash}
 
 #hex check
 if [[ "$hash" =~  ^[0-9a-fA-F]+$ ]]; then
-     #length proccess
+     #length process
    [ $length -eq 32 ] && echo  " [ $hash ] hash type: MD5"
    [ $length -eq 40 ] && echo  " [ $hash ] hash type: SHA1"
    [ $length -eq 56 ] && echo  " [ $hash ] hash type: SHA224"
