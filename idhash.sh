@@ -14,7 +14,7 @@ if [[ "$hash" =~  ^[0-9a-fA-F]+$ ]]; then
    [ $length -eq 64 ] && echo  " [ $hash ] hash type: SHA256"
    [ $length -eq 96 ] && echo  " [ $hash ] hash type: SHA384"
    [ $length -eq 128 ] && echo " [ $hash ] hash type: SHA512"
-   [ $length -gt 128 ] || [ $length -lt 32 ]  && echo "[*] Unknown hash type.."
+   [ $length -gt 128 ]  && echo "[*] Unknown hash type.."
    
 else
      echo "[!] error: not a valid hexademical string"
