@@ -3,7 +3,7 @@
 
 hash="$1"
 [ -z "$1" ] && exit 1
-length=${#hash}[ -z "$1" ]
+length=${#hash}
 
 #hex check
 if [[ "$hash" =~  ^[0-9a-fA-F]+$ ]]; then
